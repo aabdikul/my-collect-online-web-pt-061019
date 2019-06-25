@@ -4,5 +4,5 @@ def my_collect(array)
     yield(array[number])
     number += 1
   end
-  return array
+  return array.map(&:upcase)
 end
